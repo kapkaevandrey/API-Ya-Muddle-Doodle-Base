@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-21 10:56+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\reviews\models.py:18
+#, fuzzy
+#| msgid "username"
+msgid "user"
+msgstr "Пользователь"
+
+#: .\reviews\models.py:19
+msgid "admin"
+msgstr "Администратор"
+
+#: .\reviews\models.py:20
+msgid "moderator"
+msgstr "Модератор"
+
+#: .\reviews\models.py:23
+msgid "first_name"
+msgstr "Имя"
+
+#: .\reviews\models.py:29
+msgid "last_name"
+msgstr "Фамилия"
+
+#: .\reviews\models.py:35
+msgid "username"
+msgstr "Имя пользователя"
+
+#: .\reviews\models.py:40
+msgid "email"
+msgstr "Электронная почта"
+
+#: .\reviews\models.py:46
+msgid "bio"
+msgstr "О себе"
+
+#: .\reviews\models.py:52
+msgid "role"
+msgstr "Роль"
+
+#: .\reviews\models.py:76
+msgid "User"
+msgstr "Пользователь"
+
+#: .\reviews\models.py:77
+msgid "Users"
+msgstr "Пользователи"
+
+#: .\reviews\models.py:82 .\reviews\models.py:96 .\reviews\models.py:110
+msgid "name"
+msgstr "название"
+
+#: .\reviews\models.py:83 .\reviews\models.py:97
+msgid "slug"
+msgstr "идентификатор"
+
+#: .\reviews\models.py:87
+msgid "Category"
+msgstr "Категория"
+
+#: .\reviews\models.py:88
+msgid "Categories"
+msgstr "Категории"
+
+#: .\reviews\models.py:91 .\reviews\models.py:105
+#, python-brace-format
+msgid "id {id} {slug}"
+msgstr "id {id} {slug}"
+
+#: .\reviews\models.py:101
+msgid "Genre"
+msgstr "Жанр"
+
+#: .\reviews\models.py:102
+msgid "Genres"
+msgstr "Жанры"
+
+#: .\reviews\models.py:111
+msgid "year"
+msgstr "год издания"
+
+#: .\reviews\models.py:116
+msgid "category"
+msgstr "категория"
+
+#: .\reviews\models.py:118
+msgid "description"
+msgstr "описание"
+
+#: .\reviews\models.py:123 .\reviews\models.py:155
+msgid "genre"
+msgstr "жанр"
+
+#: .\reviews\models.py:129
+#, python-brace-format
+msgid "You cannot create a work with a date greater than {date}"
+msgstr "Нельзя создать произведение с датой больше {date}"
+
+#: .\reviews\models.py:135
+msgid "Title"
+msgstr "Произведение"
+
+#: .\reviews\models.py:136
+msgid "Titles"
+msgstr "Произведения"
+
+#: .\reviews\models.py:139
+#, python-brace-format
+msgid "id - {id}, name - {name}"
+msgstr "id - {id}, имя - {name}"
+
+#: .\reviews\models.py:150 .\reviews\models.py:184
+msgid "title"
+msgstr "произведение"
+
+#: .\reviews\models.py:159
+#, python-brace-format
+msgid "title_id - {title_id} {title_name} genre_id - {genre_id} {slug}"
+msgstr "title_id - {title_id} {title_name} genre_id - {genre_id} {slug}"
+
+#: .\reviews\models.py:169 .\reviews\models.py:213
+msgid "text"
+msgstr "текст"
+
+#: .\reviews\models.py:171 .\reviews\models.py:215
+msgid "date of publication"
+msgstr "дата публикации"
+
+#: .\reviews\models.py:175
+msgid "score"
+msgstr "рейтинг"
+
+#: .\reviews\models.py:190 .\reviews\models.py:222
+msgid "author"
+msgstr "автор"
+
+#: .\reviews\models.py:196
+#, fuzzy
+#| msgid "review"
+msgid "unique review"
+msgstr "уникальный отзыв"
+
+#: .\reviews\models.py:199
+msgid "Review"
+msgstr "Отзыв"
+
+#: .\reviews\models.py:200
+msgid "Reviews"
+msgstr "Отзывы"
+
+#: .\reviews\models.py:203
+#, python-brace-format
+msgid "Author - {author}; title_id-{title} review_id-{id} text part - {text}."
+msgstr "Автор - {author}; title_id-{title} review_id-{id} текст - {text}."
+
+#: .\reviews\models.py:228
+msgid "review"
+msgstr "отзыв"
+
+#: .\reviews\models.py:233
+msgid "Comment"
+msgstr "Комментарий"
+
+#: .\reviews\models.py:234
+msgid "Comments"
+msgstr "Комментарии"
+
+#: .\reviews\models.py:237
+#, python-brace-format
+msgid ""
+"Author - {author}; review_id-{review_id} comment_id-{id} text part - {text}."
+msgstr ""
+"Автор - {author}; review_id-{review_id} comment_id-{id} текст - {text}."
+
+#~ msgid "Нельзя создать произведение с датой больше {datetime.now().year}"
+#~ msgstr "Нельзя создать произведение с датой больше {date}"
