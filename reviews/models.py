@@ -2,8 +2,10 @@ from datetime import datetime
 
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
-from django.core.validators import (MaxValueValidator, MinValueValidator,
-                                    ValidationError)
+from django.core.validators import (
+    MinValueValidator,
+    MaxValueValidator,
+    ValidationError)
 from django.db import models
 from django.utils.translation import gettext as _
 
@@ -37,6 +39,7 @@ class User(AbstractUser):
     email = models.EmailField(
         _('email'),
         unique=True,
+        max_length=254
     )
 
     bio = models.TextField(
@@ -104,7 +107,7 @@ class Genre(models.Model):
 
 class Title(models.Model):
     """Модель произведений."""
-    name = models.CharField(_('name'), max_length=256)
+    name = models.CharField(_('name'), max_length=255)
     year = models.PositiveSmallIntegerField(_('year'), )
     category = models.ForeignKey(
         Category,

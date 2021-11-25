@@ -4,10 +4,16 @@ import pathlib
 
 from chardet import detect
 from django.conf import settings
-from django.contrib.auth import get_user_model
 from django.core.management.base import BaseCommand, CommandError
+from django.contrib.auth import get_user_model
 
-from reviews.models import Category, Comment, Genre, GenreTitle, Review, Title
+from reviews.models import (Comment,
+                            Category,
+                            Genre,
+                            GenreTitle,
+                            Title,
+                            Review)
+
 
 User = get_user_model()
 
@@ -35,10 +41,11 @@ class Command(BaseCommand):
     @staticmethod
     def go_to_dir_with_data_files(path: str) -> None:
         """Переходит в директорию где должны хранится файлы для заполнения из БД.
-        По умолчанию: ~/sample_data"""
+        По умолчанию: ~/static/data"""
         if path is None:
             os.chdir(settings.BASE_DIR)
-            os.chdir(pathlib.Path.cwd() / 'sample_data')
+            os.chdir("...")
+            os.chdir(pathlib.Path.cwd() / 'static' / 'data')
         elif os.path.exists(path):
             os.chdir(path)
         else:

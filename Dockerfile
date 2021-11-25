@@ -10,8 +10,4 @@ RUN python -m pip install --upgrade pip
 
 RUN pip3 install -r /code/requirements.txt
 
-RUN python
-
 COPY . .
-
-CMD gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000
