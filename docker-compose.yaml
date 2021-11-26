@@ -15,7 +15,7 @@ services:
              python manage.py migrate &&
              gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000"
     volumes:
-      - static_value:/code/static
+      - static_value:/code/static/
       - media_value:/code/media/
     depends_on:
       - db
