@@ -4,16 +4,10 @@ import pathlib
 
 from chardet import detect
 from django.conf import settings
-from django.core.management.base import BaseCommand, CommandError
 from django.contrib.auth import get_user_model
+from django.core.management.base import BaseCommand, CommandError
 
-from reviews.models import (Comment,
-                            Category,
-                            Genre,
-                            GenreTitle,
-                            Title,
-                            Review)
-
+from reviews.models import Category, Comment, Genre, GenreTitle, Review, Title
 
 User = get_user_model()
 
@@ -44,8 +38,7 @@ class Command(BaseCommand):
         По умолчанию: ~/static/data"""
         if path is None:
             os.chdir(settings.BASE_DIR)
-            os.chdir("...")
-            os.chdir(pathlib.Path.cwd() / 'static' / 'data')
+            os.chdir(pathlib.Path.cwd() / 'sample_data')
         elif os.path.exists(path):
             os.chdir(path)
         else:
