@@ -25,30 +25,30 @@
 
 Клонировать репозиторий и перейти в него в командной строке:
 
-```
+```shell
 git clone https://github.com/kapkaevandrey/yamdb_final.git
 ```
 
-```
+```shell
 cd yamdb_fianl
 ```
 
 Запустите сборку и запуск контейнров:
 
-```
+```shell
 docker-compose up
 ```
 
 Окройте другое окно терминала и выполните миграции:
 
-```
+```shell
 docker-compose exec web python manage.py makemigrations
 docker-compose exec web python manage.py migrate
 ```
 
 Заполнить данные из дампа БД:
 
-```
+```shell
 docker-compose exec web python manage.py loaddata fixtures.json 
 ```
 

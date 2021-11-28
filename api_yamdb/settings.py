@@ -7,9 +7,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv('SECRET_KEY', default="p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = ['*']
+DEBUG = (os.getenv('DEBUG', 'False') == 'True')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default="*").split(",")
 
 # Application definition
 
@@ -88,9 +87,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LOCALE_PATHS = [
-    os.path.join(BASE_DIR, '/locale'),
-]
 
 # Internationalization
 
@@ -100,7 +96,7 @@ LANGUAGES = (
     ('ru', 'Russian'),
 )
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
