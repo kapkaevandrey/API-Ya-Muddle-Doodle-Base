@@ -1,6 +1,14 @@
 name: api_yamdb-app workflow
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+      - main
+      - *
+  pull_request:
+    branches:
+      - *
 
 jobs:
   tests:
