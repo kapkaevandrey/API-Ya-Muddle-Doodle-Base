@@ -1,6 +1,9 @@
 # API Ya Muddle Doodle Base
 ![yamdb_workflow](https://github.com/kapkaevandrey/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 ## api_yamdb
+Пример запущенного сервиса:
+[luckyyamdb-api.tk/redoc](http://luckyyamdb-api.tk/redoc/)
+
 
 ### _Описание проекта_
 
