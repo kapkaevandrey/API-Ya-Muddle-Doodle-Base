@@ -13,7 +13,7 @@ services:
     command: >
       sh -c "python manage.py collectstatic --noinput &&
              python manage.py migrate &&
-             gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000"
+             gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8080"
     volumes:
       - static_value:/code/static/
       - media_value:/code/media/
